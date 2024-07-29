@@ -33,7 +33,7 @@ class PoseVideoProcessor(VideoProcessorBase):
 
 # Streamlit UI setup
 st.title("Real-time Squat form Feedback with Mediapipe")
-st.subheader("By: Advaith Malka")
+st.subheader("By: Advaith Malka", divider="blue")
 
 
 webrtc_ctx = webrtc_streamer(
