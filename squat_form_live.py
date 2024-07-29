@@ -49,7 +49,7 @@ webrtc_ctx = webrtc_streamer(
 )
 
 st.markdown("""
-# Notes for Using the Squat Analysis App
+## Notes for Using the Squat Analysis App
 
 1. **Make sure the camera is straight and not at an angle with respect to the floor.**
 2. **Keep the camera perpendicular to you when squatting.**
