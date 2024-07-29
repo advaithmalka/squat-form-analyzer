@@ -39,6 +39,10 @@ webrtc_ctx = webrtc_streamer(
   key="squat form analyizer",
   mode=WebRtcMode.SENDRECV,
   video_processor_factory=PoseVideoProcessor,
+  rtc_configuration={
+    "iceServers": get_ice_servers(),
+    "iceTransportPolicy": "relay",
+  },
   media_stream_constraints={"video": True, "audio": False},
   async_processing=True,
 )
