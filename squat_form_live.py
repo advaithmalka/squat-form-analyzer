@@ -33,6 +33,7 @@ class PoseVideoProcessor(VideoProcessorBase):
 
 # Streamlit UI setup
 st.title("Real-time Squat form Feedback with Mediapipe")
+st.subheader("By: Advaith Malka")
 
 
 webrtc_ctx = webrtc_streamer(
@@ -47,4 +48,9 @@ webrtc_ctx = webrtc_streamer(
   async_processing=True,
 )
 
+st.markdown("""
+# Notes for Using the Squat Analysis App
 
+1. **Make sure the camera is straight and not at an angle with respect to the floor.**
+2. **Keep the camera perpendicular to you when squatting.**
+""")
